@@ -9,6 +9,10 @@ include('includes/dbconnection.php');
 <head>
 	<title>Hope Harvest|||Home Page</title>
 	<link rel="icon" href="images/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -51,36 +55,34 @@ include('includes/dbconnection.php');
 <body>
 	<div class="header">
 		<div class="container">
-			<div class="header-right">
-			</div>
+			<div class="header-right"></div>
 			<div class="header-left">
 				<a href="index.php"><img src="images/logo.png" alt="logo" width="100px"></a>
 
-				<span class="menu"><img src="images/menu.png" alt="hamburger menu" /></span>
-				<ul class="nav1">
+				<span class="mobile-menu" onclick="toggleMenu()"><img src="images/menu.png" width="50px" alt="hamburger menu" /></span>
+				<ul class="nav1" id="nav1">
 					<li><a href="index.php" class="active">HOME</a></li>
 					<li><a href="about.php">ABOUT</a></li>
-					<li><a href="food-available.php"> AVAILABLE FOOD LIST</a></li>
-
+					<li><a href="food-available.php">AVAILABLE FOOD LIST</a></li>
 					<li><a href="contact.php">CONTACT</a></li>
 					<li><a href="donor/login.php">DONOR</a></li>
 					<li><a href="admin/login.php">ADMIN</a></li>
-
 				</ul>
-				<!-- script for menu -->
-				<script>
-					$("span.menu").click(function() {
-						$("ul.nav1").slideToggle(300, function() {
-							// Animation complete.
-						});
-					});
-				</script>
-				<!-- //script for menu -->
 			</div>
-
 			<div class="clearfix"></div>
 		</div>
 	</div>
+
+	<script>
+		function toggleMenu() {
+			var x = document.getElementById("nav1");
+			if (x.className === "nav1") {
+				x.className += " show";
+			} else {
+				x.className = "nav1";
+			}
+		}
+	</script>
 	<style>
 		.header-left {
 			display: flex;
@@ -104,7 +106,35 @@ include('includes/dbconnection.php');
 		.header-left ul li a {
 			font-family: 'Roboto', sans-serif;
 		}
+
+		.mobile-menu {
+			display: none;
+		}
+
+		@media only screen and (max-width: 768px) {
+			.mobile-menu {
+				display: block;
+				cursor: pointer;
+			}
+
+			.nav1 {
+				display: none;
+			}
+
+			.nav1.show {
+				display: block;
+			}
+		}
+
+		@media only screen and (min-width: 768px) {
+			.mobile-menu {
+				display: none;
+			}
+
+
+		}
 	</style>
+
 	<!-- banner -->
 	<div class="banner">
 		<div class="container">

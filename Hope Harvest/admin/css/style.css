@@ -245,7 +245,7 @@ ul.sidebar-menu li a.active i {
   left: 0;
   right: 0;
   z-index: 1002;
-  background: rgb(240, 188, 180);
+  background: #57aa56;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -265,7 +265,7 @@ ul.sidebar-menu li a.active i {
   width: 100%;
 }
 .brand {
-  background: #8b5c7e;
+  background: black;
   float: left;
   width: 240px;
   height: 80px;
@@ -303,7 +303,7 @@ ul.top-menu {
 ul.top-menu > li > a {
   color: #fff;
   font-size: 16px;
-  background: #8b5c7e;
+  background: black;
   padding: 4px 8px;
   margin-right: 15px;
   border-radius: 50%;
@@ -635,7 +635,7 @@ ul.top-menu > li > a:focus {
   float: left;
   margin-top: 23px;
   margin-left: -15px;
-  background: #8b5c7e;
+  background: black;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   width: 32px;
@@ -3530,7 +3530,7 @@ h6 {
   border-radius: 20px;
 }
 .footer {
-  background: #d19a98;
+  background: #57aa56;
   padding: 20px;
   position: absolute;
   bottom: 0;
