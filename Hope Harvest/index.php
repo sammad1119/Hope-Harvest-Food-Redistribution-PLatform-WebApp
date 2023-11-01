@@ -16,7 +16,6 @@ include('includes/dbconnection.php');
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<!-- jQuery (Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery.min.js"></script>
 	<!-- Custom Theme files -->
@@ -53,25 +52,48 @@ include('includes/dbconnection.php');
 </head>
 
 <body>
-	<div class="header">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
-			<div class="header-right"></div>
-			<div class="header-left">
-				<a href="index.php"><img src="images/logo.png" alt="logo" width="100px"></a>
-
-				<span class="mobile-menu" onclick="toggleMenu()"><img src="images/menu.png" width="50px" alt="hamburger menu" /></span>
-				<ul class="nav1" id="nav1">
-					<li><a href="index.php" class="active">HOME</a></li>
-					<li><a href="about.php">ABOUT</a></li>
-					<li><a href="food-available.php">AVAILABLE FOOD LIST</a></li>
-					<li><a href="contact.php">CONTACT</a></li>
-					<li><a href="donor/login.php">DONOR</a></li>
-					<li><a href="admin/login.php">ADMIN</a></li>
+			<a class="navbar-brand" href="index.php"><img src="images/logo.png" width="95px" alt="logo"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.php">HOME <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="food-available.php">AVAILABLE FOOD LIST</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.php">ABOUT US</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.php">CONTACT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="donor/login.php">DONOR</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="admin/login.php">ADMIN</a>
+					</li>
 				</ul>
 			</div>
-			<div class="clearfix"></div>
 		</div>
-	</div>
+
+	</nav>
+	<style>
+		.navbar-collapse {
+			justify-content: center;
+		}
+
+		.navbar-toggler {
+			position: absolute !important;
+			right: 20px;
+			top: 20px;
+		}
+	</style>
 
 	<script>
 		function toggleMenu() {
