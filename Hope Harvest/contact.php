@@ -142,9 +142,9 @@ if (isset($_POST['submit'])) {
 	<div class="contact">
 		<div class="container">
 			<div class="contact-header">
-				<h3>CONTACT</h3>
+				<h3 style="color: black ">CONTACT US</h3>
 			</div>
-			<div class="contact-gds">
+			<div class="contact-gds row">
 				<div class="col-md-6 contact-top">
 					<h3>Want to work with us?</h3>
 					<form action="#" method="post">
@@ -180,9 +180,9 @@ if (isset($_POST['submit'])) {
 					while ($row = mysqli_fetch_array($ret)) {
 
 					?>
-						<h3 class="info"> <?php echo $row['PageTitle']; ?></h3>
 						<h4 class="mb-lg-3 mb-2">Address </h4>
 						<p><?php echo $row['PageDescription']; ?></p>
+						<img src="images/contact.png" alt="contact" width="100%">
 
 
 				</div><?php } ?>

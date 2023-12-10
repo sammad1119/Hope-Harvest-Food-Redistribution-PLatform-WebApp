@@ -118,6 +118,10 @@ include('includes/dbconnection.php');
 		.header-left ul li a {
 			font-family: 'Roboto', sans-serif;
 		}
+
+		.about-info-left {
+			margin: auto;
+		}
 	</style>
 	<!-- banner -->
 
@@ -131,15 +135,15 @@ include('includes/dbconnection.php');
 			while ($row = mysqli_fetch_array($ret)) {
 
 			?>
+				<h1 class="text-center"><?php echo $row['PageTitle']; ?> </h1>
 
 				<div class="about-info">
 
-					<div class="about-gds">
-						<div class="col-md-5 about-info-left">
+					<div class="about-gds row">
+						<div class="col-md-6 about-info-left">
 							<img src="images/i666.jpg" alt="" />
 						</div>
-						<div class="col-md-7 about-info-right">
-							<h4><?php echo $row['PageTitle']; ?> </h4>
+						<div class="col-md-6 about-info-right">
 							<p><?php echo $row['PageDescription']; ?></p>
 						</div>
 						<div class="clearfix"> </div>

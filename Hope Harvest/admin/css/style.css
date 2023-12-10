@@ -3536,3 +3536,6 @@ h6 {
   bottom: 0;
   width: -webkit-fill-available;
 }
+.donor-login {
+  background-image: url(../images/bg.jpg);
+}

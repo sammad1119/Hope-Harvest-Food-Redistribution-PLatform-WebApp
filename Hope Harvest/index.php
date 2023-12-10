@@ -238,7 +238,7 @@ include('includes/dbconnection.php');
 			<div class="mission-header">
 				<h3>OUR MISSION</h3>
 			</div>
-			<div class="mission-grids">
+			<div class="mission-grids row">
 				<div class="col-md-6 mission-left">
 					<img src="images/333.jpg" alt="" />
 				</div>
