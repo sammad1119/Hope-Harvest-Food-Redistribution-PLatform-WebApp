@@ -60,8 +60,8 @@ if (isset($_POST['submit'])) {
 <body>
   <?php include_once("includes/header.php"); ?>
   <!-- banner -->
-  <div class="banner page-head">
-  </div>
+  <!-- <div class="banner page-head">
+  </div> -->
   <!-- //banner -->
   <!-- typo-page -->
   <!--typography-->

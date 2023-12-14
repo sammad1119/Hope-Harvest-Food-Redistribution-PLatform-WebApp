@@ -228,11 +228,11 @@ ul.sidebar-menu li a.active i {
   transition: all 0.3s ease-in-out;
 }
 .footer {
-    background: #57aa56;
-    padding: 20px;
-    bottom: 0;
-    position: absolute;
-    width: -webkit-fill-available;
+  background: #57aa56;
+  padding: 20px;
+  bottom: 0;
+  position: relative;
+  width: -webkit-fill-available;
 }
 .footer p {
   color: #fff;
