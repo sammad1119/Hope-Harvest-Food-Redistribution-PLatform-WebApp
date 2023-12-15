@@ -60,8 +60,7 @@ if (isset($_POST['submit'])) {
 <body>
   <?php include_once("includes/header.php"); ?>
   <!-- banner -->
-  <div class="banner page-head">
-  </div>
+
   <!-- //banner -->
   <!-- typo-page -->
   <!--typography-->
@@ -70,8 +69,8 @@ if (isset($_POST['submit'])) {
       <?php
       $vid = $_GET['foodid'];
       $ret = mysqli_query($con, "select tblfoodrequests.requestNumber,tblfoodrequests.requestDate,tblfoodrequests.mobileNumber,tblfoodrequests.message,tblfoodrequests.status,tblfoodrequests.donorRemark,tblfoodrequests.requestCompletionDate,tblfoodrequests.fullName,
-tblfood.ID,tblfood.foodId,tblfood.ContactPerson,tblfood.CPMobNumber,tblfood.CreationDate,tblfood.FoodItems,tblfood.StateName,tblfood.CityName,tblfood.Description,tblfood.PickupDate,tblfood.PickupAddress,tblfood.Image,tblfood.UpdationDate,tbldonor.FullName,tbldonor.MobileNumber,tbldonor.Email from 
-tblfood 
+tblfood.ID,tblfood.foodId,tblfood.ContactPerson,tblfood.CPMobNumber,tblfood.CreationDate,tblfood.FoodItems,tblfood.StateName,tblfood.CityName,tblfood.Description,tblfood.PickupDate,tblfood.PickupAddress,tblfood.Image,tblfood.UpdationDate,tbldonor.FullName,tbldonor.MobileNumber,tbldonor.Email 
+from tblfood 
 left join tblfoodrequests  on tblfood.ID=tblfoodrequests.foodId
 join tbldonor on tblfood.DonorID=tbldonor.ID
  where  tblfood.ID='$vid'");
@@ -80,7 +79,7 @@ join tbldonor on tblfood.DonorID=tbldonor.ID
 
         <section id="tables">
           <div class="page-header">
-            <h1>Food details of #<?php echo $row['RequestNumber']; ?></h1>
+            <h1>Food details of #<?php echo $row['foodId']; ?></h1>
           </div>
           <div class="bs-docs-example">
             <table class="table table-bordered" style="color:#000 !important;">

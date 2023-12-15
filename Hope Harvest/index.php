@@ -187,11 +187,7 @@ include('includes/dbconnection.php');
 					<li>
 						<div class="banner-info">
 							<h3>WE NEED YOUR SUPPORT</h3>
-							<p>Sed ut perspiciatis unde omnis iste natus
-								error sit voluptatem accusantium doloremque
-								laudantium, totam rem aperiam, eaque ipsa quae
-								ab illo inventore veritatis et quasi architecto
-								beatae vitae dicta sunt</p>
+							<p>Every act of kindness counts. Help us make a lasting impact by supporting our mission to provide meals to the less fortunate. Your generosity brings hope and sustenance to our community.</p>
 							<a href="about.php" class="hvr-rectangle-out button">READ MORE</a>
 						</div>
 						<div class="clearfix"></div>
@@ -199,11 +195,7 @@ include('includes/dbconnection.php');
 					<li>
 						<div class="banner-info">
 							<h3>HELP TURN TEARS TO SURES</h3>
-							<p>Sed ut perspiciatis unde omnis iste natus
-								error sit voluptatem accusantium doloremque
-								laudantium, totam rem aperiam, eaque ipsa quae
-								ab illo inventore veritatis et quasi architecto
-								beatae vitae dicta sunt </p>
+							<p>Every act of kindness counts. Join us in the mission to turn tears into joy by providing essential meals to those facing hunger. Your support matters.</p>
 							<a href="about.php" class="hvr-rectangle-out button">READ MORE</a>
 						</div>
 						<div class="clearfix"></div>
