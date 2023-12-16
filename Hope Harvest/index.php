@@ -30,10 +30,10 @@ include('includes/dbconnection.php');
 			window.scrollTo(0, 1);
 		}
 	</script>
-	<!--webfont-->
+
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-	<!--webfont-->
+
 	<!--js-->
 	<!---- start-smoth-scrolling---->
 	<script type="text/javascript" src="js/move-top.js"></script>
@@ -52,12 +52,24 @@ include('includes/dbconnection.php');
 </head>
 
 <body>
+
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container">
-			<a class="navbar-brand" href="index.php"><img src="images/logo.png" width="95px" alt="logo"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+
+		<div class="container-main">
+
+			<div class="headerLogo">
+				<a class="navbar-brand" href="index.php"><img src="images/logo.png" width="95px" alt="logo"></a>
+			</div>
+
+
+			<!-- Mobile View Toggle Button -->
+			<div class="btnToggle">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+			</div>
+
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item active">
@@ -80,32 +92,44 @@ include('includes/dbconnection.php');
 					</li>
 				</ul>
 			</div>
+
 		</div>
 
 	</nav>
+
+
 	<style>
-		.navbar-collapse {
+		.container-main {
+			display: flex;
 			justify-content: center;
+			align-items: center;
+			width: 100%;
+		}
+
+		.headerLogo {
+			width: 30%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.btnToggle {
+			width: 100%;
+		}
+
+		.navbar-collapse {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
 		}
 
 		.navbar-toggler {
 			position: absolute !important;
-			right: 20px;
-			top: 20px;
+			right: 40px;
+			top: 40px;
 		}
-	</style>
 
-	<script>
-		function toggleMenu() {
-			var x = document.getElementById("nav1");
-			if (x.className === "nav1") {
-				x.className += " show";
-			} else {
-				x.className = "nav1";
-			}
-		}
-	</script>
-	<style>
 		.header-left {
 			display: flex;
 			justify-content: space-around;
@@ -129,15 +153,7 @@ include('includes/dbconnection.php');
 			font-family: 'Roboto', sans-serif;
 		}
 
-		.mobile-menu {
-			display: none;
-		}
-
-		@media only screen and (max-width: 768px) {
-			.mobile-menu {
-				display: block;
-				cursor: pointer;
-			}
+		@media only screen and (max-width: 900px) {
 
 			.nav1 {
 				display: none;
@@ -146,16 +162,43 @@ include('includes/dbconnection.php');
 			.nav1.show {
 				display: block;
 			}
-		}
 
-		@media only screen and (min-width: 768px) {
-			.mobile-menu {
-				display: none;
+			.container-main {
+				width: 30%;
+				display: flex;
+				justify-content: left;
+				align-items: center;
+				flex-direction: column;
+			}
+
+			.headerLogo {
+				width: 100%;
+				display: flex;
+				justify-content: flex-start;
+				align-items: flex-start;
+			}
+
+			.navbar-collapse {
+				display: flex;
+				justify-content: flex-start;
+				align-items: flex-start;
+				width: 100%;
 			}
 
 
 		}
 	</style>
+
+	<script>
+		function toggleMenu() {
+			var x = document.getElementById("nav1");
+			if (x.className === "nav1") {
+				x.className += " show";
+			} else {
+				x.className = "nav1";
+			}
+		}
+	</script>
 
 	<!-- banner -->
 	<div class="banner">
