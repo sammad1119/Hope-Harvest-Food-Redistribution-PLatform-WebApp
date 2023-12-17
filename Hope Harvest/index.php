@@ -30,10 +30,10 @@ include('includes/dbconnection.php');
 			window.scrollTo(0, 1);
 		}
 	</script>
-	<!--webfont-->
+
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-	<!--webfont-->
+
 	<!--js-->
 	<!---- start-smoth-scrolling---->
 	<script type="text/javascript" src="js/move-top.js"></script>
@@ -52,9 +52,10 @@ include('includes/dbconnection.php');
 </head>
 
 <body>
+
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
-			<a class="navbar-brand" href="index.php"><img src="images/logo.png" width="95px" alt="logo"></a>
+			<a class="navbar-brand" href="index.php"><img src="images/logo.png" width="80px" alt="logo"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -66,7 +67,7 @@ include('includes/dbconnection.php');
 					<li class="nav-item">
 						<a class="nav-link" href="food-available.php">AVAILABLE FOOD LIST</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item ">
 						<a class="nav-link" href="about.php">ABOUT US</a>
 					</li>
 					<li class="nav-item">
@@ -83,29 +84,40 @@ include('includes/dbconnection.php');
 		</div>
 
 	</nav>
+
+
 	<style>
-		.navbar-collapse {
+		.container-main {
+			display: flex;
 			justify-content: center;
+			align-items: center;
+			width: 100%;
+		}
+
+		.headerLogo {
+			width: 30%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.btnToggle {
+			width: 100%;
+		}
+
+		.navbar-collapse {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
 		}
 
 		.navbar-toggler {
 			position: absolute !important;
-			right: 20px;
-			top: 20px;
+			right: 40px;
+			top: 40px;
 		}
-	</style>
 
-	<script>
-		function toggleMenu() {
-			var x = document.getElementById("nav1");
-			if (x.className === "nav1") {
-				x.className += " show";
-			} else {
-				x.className = "nav1";
-			}
-		}
-	</script>
-	<style>
 		.header-left {
 			display: flex;
 			justify-content: space-around;
@@ -129,15 +141,7 @@ include('includes/dbconnection.php');
 			font-family: 'Roboto', sans-serif;
 		}
 
-		.mobile-menu {
-			display: none;
-		}
-
-		@media only screen and (max-width: 768px) {
-			.mobile-menu {
-				display: block;
-				cursor: pointer;
-			}
+		@media only screen and (max-width: 900px) {
 
 			.nav1 {
 				display: none;
@@ -146,16 +150,43 @@ include('includes/dbconnection.php');
 			.nav1.show {
 				display: block;
 			}
-		}
 
-		@media only screen and (min-width: 768px) {
-			.mobile-menu {
-				display: none;
+			.container-main {
+				width: 30%;
+				display: flex;
+				justify-content: left;
+				align-items: center;
+				flex-direction: column;
+			}
+
+			.headerLogo {
+				width: 100%;
+				display: flex;
+				justify-content: flex-start;
+				align-items: flex-start;
+			}
+
+			.navbar-collapse {
+				display: flex;
+				justify-content: flex-start;
+				align-items: flex-start;
+				width: 100%;
 			}
 
 
 		}
 	</style>
+
+	<script>
+		function toggleMenu() {
+			var x = document.getElementById("nav1");
+			if (x.className === "nav1") {
+				x.className += " show";
+			} else {
+				x.className = "nav1";
+			}
+		}
+	</script>
 
 	<!-- banner -->
 	<div class="banner">
@@ -216,16 +247,19 @@ include('includes/dbconnection.php');
 			while ($row = mysqli_fetch_array($ret)) {
 
 			?>
-				<div class="welcome-head">
-
-					<p><?php echo $row['PageDescription']; ?></p>
+				<div class="welcome-head mission-header h3">
+					<h3 class="">Welcome to HopeHarvest</h3>
+					<br>
+					<p>At HopeHarvest, we extend a warm embrace to all those who share a common vision of making a positive impact on the lives of others through food redistribution and donation. Our mission is to foster a community of kindness, where surplus nourishment meets the hungry, and compassion cultivates change.
+						As we navigate the path of goodwill, we invite you to be a part of this journey. Whether you are a donor, a volunteer, or someone seeking support, HopeHarvest stands as a beacon of hope, bringing together hearts that believe in the power of sharing.
+						Together, let's create a world where no one goes to bed hungry, and where the act of giving transforms lives. Thank you for joining us in this noble cause. Your support is the driving force behind every meal served, every smile shared, and every life touched. Welcome to HopeHarvest – where every contribution, big or small, sows the seeds of compassion and cultivates a harvest of hope for a brighter, nourished tomorrow.</p>
 				</div>
 
 		</div><?php } ?>
 	</div>
 	<!-- //welcome -->
 	<!-- mission -->
-	<div class="mission">
+	<div class=" mission">
 		<div class="container">
 			<div class="mission-header">
 				<h3>OUR MISSION</h3>

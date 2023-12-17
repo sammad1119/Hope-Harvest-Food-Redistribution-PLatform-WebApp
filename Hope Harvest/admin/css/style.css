@@ -3532,7 +3532,7 @@ h6 {
 .footer {
   background: #57aa56;
   padding: 20px;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: -webkit-fill-available;
 }
