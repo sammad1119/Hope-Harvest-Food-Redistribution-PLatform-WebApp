@@ -158,7 +158,7 @@ if (isset($_POST['submit'])) {
 						</div>
 						<div class="con-text">
 							<span>Phone </span>
-							<input type="text" class="form-control" placeholder="Phone" required="" name="phone" pattern="[0-9]+" maxlength="10">
+							<input type="text" class="form-control" placeholder="Phone" required="" name="phone" pattern="[0-9]+" maxlength="11">
 						</div>
 						<div class="con-text">
 							<span>Your Email </span>

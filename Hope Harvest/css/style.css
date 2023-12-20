@@ -389,6 +389,8 @@ text-transform:uppercase;
 }
 .about-info-left img {
   width: 100%;
+height: 425px;
+border-radius: 25px;
 }
 
 .about-info-left {
