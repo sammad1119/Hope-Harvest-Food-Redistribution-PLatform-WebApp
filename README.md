@@ -31,3 +31,18 @@ Analytics Dashboard: Hope Harvest offers insights and analytics on food donation
 Community Engagement: Beyond facilitating transactions, Hope Harvest fosters community engagement by raising awareness about food waste and hunger issues through educational resources, volunteer opportunities, and success stories.
 
 # Tools and Technologies 
+
+
+# Front-end development:
+
+ HTMl: HTML is the markup language used to structure web pages.
+ CSS : CSS is used to style and layout the visual aspects of web pages.
+JavaScript:  JavaScript is a scripting language used for dynamic, interactive web pages.
+
+# Back-end development: 
+
+PHP PHP is a back-end language Git is a version control system used for tracking changes in code. GitHub is a web-based hosting service 
+
+for Git repositories, commonly used for collaborative software development.
+
+Using these technologies can help you to build a robust and scalable web application for our food redistribution and donation project. 
