@@ -45,7 +45,13 @@ JavaScript:  JavaScript is a scripting language used for dynamic, interactive we
 
 # Back-end development: 
 
-PHP PHP is a back-end language Git is a version control system used for tracking changes in code. GitHub is a web-based hosting service 
+PHP : PHP is a back-end language
+<br>
+
+ Git: Git is a version control system used for tracking changes in code.
+<br>
+
+Github:  GitHub is a web-based hosting service 
 <br>
 for Git repositories, commonly used for collaborative software development.
 <br>
