@@ -17,7 +17,17 @@ Key features of Hope Harvest include:
 <br>
 
 Real-time Matching: Utilizing advanced algorithms, Hope Harvest matches surplus food donations with nearby charities in real-time, ensuring timely distribution and minimizing food waste.
+<br>
+
 Customizable Preferences: Users can set preferences based on dietary restrictions, food types, and pickup schedules, allowing for tailored donation and distribution options.
+<br>
+
 Communication Hub: The platform provides a centralized communication hub for donors and recipients to coordinate pickup logistics, ask questions, and provide feedback, fostering transparency and trust.
+<br>
+
 Analytics Dashboard: Hope Harvest offers insights and analytics on food donations and distribution trends, empowering users to make data-driven decisions and optimize their impact.
+<br>
+
 Community Engagement: Beyond facilitating transactions, Hope Harvest fosters community engagement by raising awareness about food waste and hunger issues through educational resources, volunteer opportunities, and success stories.
+
+# Tools and Technologies 
